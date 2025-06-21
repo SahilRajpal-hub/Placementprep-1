@@ -1,0 +1,24 @@
+This includes core components like:
+
+Elevator
+
+Floor
+
+Request
+
+Controller
+
+Direction
+
+ElevatorState
+
+This code assumes a single elevator system to keep it simple, but the structure allows easy scaling for multiple elevators.
+
+
+elevator/
+├── Main.java
+└── model/
+    ├── Direction.java
+    ├── ElevatorState.java
+    ├── Request.java
+    └── Elevator.java

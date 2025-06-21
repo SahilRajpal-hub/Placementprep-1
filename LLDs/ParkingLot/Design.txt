@@ -1,0 +1,65 @@
+✅ Key Features Covered
+Multiple parking floors
+
+Multiple parking spots per floor
+
+Different types of vehicles (Car, Bike, Truck)
+
+Different types of parking spots (Compact, Large, Bike)
+
+Entry and exit gates
+
+Ticket issuance and payment processing
+
+Real-time parking availability
+
+
+
+
+
+ParkingLot
+ ├── List<ParkingFloor>
+ ├── List<EntryGate>
+ ├── List<ExitGate>
+ ├── ParkingRate
+ └── +getInstance()
+
+ParkingFloor
+ ├── int floorNumber
+ ├── Map<ParkingSpotType, List<ParkingSpot>>
+ └── +isFull(), +assignSpot(), +vacateSpot()
+
+ParkingSpot (abstract)
+ ├── String spotId
+ ├── boolean isOccupied
+ └── +assignVehicle(), +removeVehicle()
+
+├── CompactSpot
+├── LargeSpot
+└── BikeSpot
+
+Vehicle (abstract)
+ ├── String licenseNumber
+ ├── VehicleType type
+
+├── Car
+├── Bike
+└── Truck
+
+Ticket
+ ├── String ticketId
+ ├── Vehicle vehicle
+ ├── LocalDateTime entryTime
+ ├── ParkingSpot spot
+
+Payment
+ ├── String transactionId
+ ├── PaymentStatus status
+ ├── double amount
+ ├── LocalDateTime time
+
+EntryGate
+ ├── +generateTicket(Vehicle)
+
+ExitGate
+ ├── +processPayment(Ticket)

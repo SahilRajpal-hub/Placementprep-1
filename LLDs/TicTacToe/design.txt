@@ -1,0 +1,68 @@
+✅ Core Classes and Responsibilities
+Game
+Controls the game loop.
+
+Manages the board and players.
+
+Switches turns.
+
+Checks for game status.
+
+Player
+Has a name and a symbol (X or O).
+
+Makes a move on the board.
+
+Board
+Maintains the grid state.
+
+Validates and places moves.
+
+Checks for win or draw.
+
+GameStatus
+Enum to represent state of the game.
+
+
+
+
+
++------------------+
+|      Game        |
++------------------+
+| - board: Board   |
+| - players: List<Player> |
+| - currentPlayer: Player |
++------------------+
+| + start(): void  |
+| + switchPlayer(): void |
+| + checkStatus(): GameStatus |
++------------------+
+
++------------------+
+|     Player       |
++------------------+
+| - name: String   |
+| - symbol: char   |
++------------------+
+| + makeMove(board: Board): boolean |
++------------------+
+
++------------------+
+|      Board       |
++------------------+
+| - grid: char[][] |
++------------------+
+| + print(): void  |
+| + placeSymbol(row, col, symbol): boolean |
+| + checkWin(symbol): boolean |
+| + isFull(): boolean |
++------------------+
+
++---------------------+
+|    GameStatus (enum)|
++---------------------+
+| IN_PROGRESS         |
+| DRAW                |
+| WIN                 |
++---------------------+

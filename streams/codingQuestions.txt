@@ -1,0 +1,40 @@
+Basic Coding Questions
+1.	Convert a list of strings to uppercase.
+2.	Find all even numbers from a list of integers.
+3.	Count the number of elements greater than 10 in a list.
+4.	Find the first element that starts with a given prefix.
+5.	Remove null values from a list.
+6.	Sort a list of integers using Stream.
+7.	Calculate the sum of all elements in a list.
+8.	Create a list of squares from a list of integers.
+9.	Check if any element in a list is negative.
+10.	Join a list of strings with a comma separator.
+
+
+
+Intermediate Coding Questions
+11.	Get the top 3 highest numbers from a list.
+12.	Find the frequency of each character in a string.
+13.	Group a list of employees by department.
+14.	Find duplicate elements in a list.
+15.	Get a list of unique elements from a list.
+16.	Partition a list of numbers into even and odd.
+17.	Find the average age of employees.
+18.	Sort a list of objects by a specific field (e.g., name, age).
+19.	Get summary statistics (min, max, average, count, sum) from a list of integers.
+20.	Find the second highest number in a list.
+
+
+
+Advanced Coding Questions
+21.	Find the longest string in a list.
+22.	Group a list of words by their length.
+23.	Find the most frequent element in a list.
+24.	Flatten a list of lists using flatMap.
+25.	Find common elements between two lists.
+26.	Convert a list of objects to a Map (e.g., id -> name).
+27.	Perform a case-insensitive match using streams.
+28.	Write a custom collector to concatenate strings.
+29.	Filter and sort employees who earn above a certain salary.
+30.	Remove duplicates based on a custom field (e.g., email address).
+
