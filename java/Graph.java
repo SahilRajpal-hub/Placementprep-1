@@ -20,7 +20,7 @@ public class Graph {
     
     // *** Traversals
     // * BFS
-    // ? TC = O(V + 2*E) , SC = O(2*V
+    // ? TC = O(V + 2*E) , SC = O(2*V)
     public ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
         ArrayList<Integer> ans = new ArrayList<>();
         Queue<Integer> q = new LinkedList<>();

@@ -15,23 +15,25 @@ Combine Futures	     thenCombine(), allOf(), anyOf()
 */
 //example
 
+/*
+
 CompletableFuture<String> userIdFuture = CompletableFuture
-    // Step 1: Start Async Task
+    Step 1: Start Async Task
     .supplyAsync(() -> fetchUserId("sahil@email.com"), executor)
 
-    // Step 2: Chain another async call (dependent)
+    Step 2: Chain another async call (dependent)
     .thenCompose(userId -> fetchUserProfile(userId))
 
-    // Step 3: Transform the profile
+    Step 3: Transform the profile
     .thenApply(profile -> profile.toUpperCase())
 
-    // Step 4: Error handling
+    Step 4: Error handling
     .exceptionally(ex -> {
         System.out.println("Error occurred: " + ex.getMessage());
         return "Default User Profile";
     });
 
-// Step 5: Combine with another future
+Step 5: Combine with another future
 CompletableFuture<String> greetingFuture = CompletableFuture.supplyAsync(() -> fetchGreeting(), executor);
 
 CompletableFuture<Void> combined = userIdFuture.thenAcceptBoth(greetingFuture, (profile, greeting) -> {
@@ -39,3 +41,5 @@ CompletableFuture<Void> combined = userIdFuture.thenAcceptBoth(greetingFuture, (
 });
 
 combined.join();
+
+ */
